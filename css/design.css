@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(24, 22, 22, 0.863);
+    text-transform: uppercase;
+    height: 60px;
+}
+
+section {
+    width: 350px;
+    height: 370px;
+    margin: 50px auto;
+    border: 5px solid black;
+}
+
+.output-screen {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 5px solid black;
+    background-color: #efefef;
+    height: 60px;
+}
+
+.output-screen p {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.controller {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;    
+}
+
+.buttons {
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;  
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons:hover{
+    color: white;
+    background-color: black;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(24, 22, 22, 0.863);
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+}
+
+.b--3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+
+.b--4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.b--5 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+
+.b--6 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+
+.b--7 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.b--8 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.b--17 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.b--9 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.b--10 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.b--16 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.b--11 {
+    grid-column: 4 / 5;
+    grid-row: 3 / span 2;
+    height: 130px;
+}
+
+.b--15 {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+}
+
+.b--12 {
+    grid-column: 5 / 6;
+    grid-row: 3 / span 1;
+}
+
+.b--14 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+
