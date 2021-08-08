@@ -68,7 +68,7 @@ strong {
 .logger span{
     color: rgba(0, 0, 0, 0.521);
     /* background-color: yellow; */
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .out-val {
@@ -80,7 +80,7 @@ strong {
   
     /* background-color: rgba(220, 20, 60, 0.452); */
     color: rgba(0, 0, 0, 0.87);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .controller {
