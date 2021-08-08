@@ -52,6 +52,7 @@ strong {
     background-color: #ffffffa4;
     border: 2px solid rgba(0, 0, 0, 0.425);
     width: 100%;
+    overflow-y:auto ;
     /* height: 100px; */
 }
 
@@ -66,9 +67,15 @@ strong {
 }
 
 .logger span{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     color: rgba(0, 0, 0, 0.521);
     /* background-color: yellow; */
     font-size: 14px;
+    height: auto;
+    overflow-x:visible;
+    overflow-y: hidden;
 }
 
 .out-val {

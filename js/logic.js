@@ -37,18 +37,29 @@ const result = () => {
 
 
 const input_val = (object) => {
-    if(object.innerHTML=="."){
-        document.getElementsByClassName("button-dot")[0].disabled=true;
+    if(digits.length==0 && (object.innerHTML=="." || object.innerHTML=="00" || object.innerHTML=="0")){
+        return;
     }
-    digits+=object.innerHTML;
-    document.querySelector(".logger span").innerHTML+=object.innerHTML;
-    document.querySelector(".out-val span").innerHTML=digits;
-    operationButton=true;
+    if(digits.length>10){
+        document.querySelector(".logger span").innerHTML="max reached!";
+        document.querySelector(".logger span").style.color="red";
+    }
+    else{
+        if(object.innerHTML=="."){
+            document.getElementsByClassName("button-dot")[0].disabled=true;
+        }
+        digits+=object.innerHTML;
+        document.querySelector(".logger span").innerHTML+=object.innerHTML;
+        document.querySelector(".out-val span").innerHTML=digits;
+        operationButton=true;
+    }
+    
 }
 
 
 const additions = (object) => {
     document.getElementsByClassName("button-dot")[0].disabled=false;
+    document.querySelector(".logger span").style.color="inherit";
     if(digits.length==0){
         // console.log("Please enter number");
         return;
@@ -60,6 +71,7 @@ const additions = (object) => {
 
 const substractions = (object) => {
     document.getElementsByClassName("button-dot")[0].disabled=false;
+    document.querySelector(".logger span").style.color="inherit";
     point_onetime=true;
     if(digits.length==0){
         // console.log("Please enter number");
@@ -72,6 +84,7 @@ const substractions = (object) => {
 
 const divides = (object) => {
     document.getElementsByClassName("button-dot")[0].disabled=false;
+    document.querySelector(".logger span").style.color="inherit";
     point_onetime=true;
     if(digits.length==0){
         // console.log("Please enter number");
@@ -85,6 +98,7 @@ const divides = (object) => {
 
 const percentages = (object) => {
     document.getElementsByClassName("button-dot")[0].disabled=false;
+    document.querySelector(".logger span").style.color="inherit";
     point_onetime=true;
     if(digits.length==0){
         // console.log("Please enter number");
@@ -97,6 +111,7 @@ const percentages = (object) => {
 
 const multiplys = (object) => {
     document.getElementsByClassName("button-dot")[0].disabled=false;
+    document.querySelector(".logger span").style.color="inherit";
     point_onetime=true;
     if(digits.length==0){
         // console.log("Please enter number");
